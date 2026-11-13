@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Child Safety Standards · Nooks Owl</title>
+<meta name="description" content="Nooks Owl is a voice chat app for adults. Post a topic, find people open to talk, and call when you’re both ready.">
+<meta name="theme-color" content="#1C1917">
+<meta property="og:title" content="Child Safety Standards · Nooks Owl">
+<meta property="og:description" content="Nooks Owl is a voice chat app for adults. Post a topic, find people open to talk, and call when you’re both ready.">
+<meta property="og:image" content="https://nooksowl.com/icon.png">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Inter:wght@400;600;700&display=swap">
+<style>
+:root { --bg:#F6F2EC; --card:#FFFDF9; --surface:#F0EBE3; --text:#231E1A; --muted:#6A6159; --accent:#C2410C; --link:#B53D0B;
+  --border:rgba(70,50,30,.12); --bar:#1C1917; --shadow:0 6px 24px rgba(90,58,30,.08); color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161412; --card:#201D1A; --surface:#2A2622; --text:#ECE5DC; --muted:#A69C91;
+  --accent:#C2410C; --link:#F0965A; --border:rgba(255,235,210,.09); --bar:#0E0C0B; --shadow:none; color-scheme: dark; } }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:var(--link); }
+.bar { background:var(--bar); color:#fff; }
+.bar .in { max-width:1040px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.brand { display:flex; align-items:center; gap:10px; color:#fff; text-decoration:none; font:700 21px/1 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing:-.3px; }
+.brand img { width:38px; height:38px; border-radius:10px; }
+nav { margin-left:auto; display:flex; gap:18px; flex-wrap:wrap; }
+nav a { color:rgba(255,255,255,.72); text-decoration:none; font-size:15px; }
+nav a:hover, nav a[aria-current] { color:#FFB067; }
+h1, h2, h3 { font-family:"Bricolage Grotesque", system-ui, sans-serif; letter-spacing:-.4px; }
+h1 { font-size:clamp(34px,6vw,54px); line-height:1.06; margin:0 0 16px; }
+h2 { font-size:24px; line-height:1.2; margin:34px 0 8px; }
+h3 { font-size:19px; margin:0 0 6px; }
+p { margin:0 0 12px; }
+.muted { color:var(--muted); font-size:15px; }
+.doc { max-width:760px; margin:36px auto 0; padding:0 20px; }
+.doc article { background:var(--card); border:1px solid var(--border); border-radius:24px; padding:clamp(22px,4vw,40px); box-shadow:var(--shadow); }
+.doc article h1 { font-size:clamp(30px,5vw,40px); }
+.contact { margin-top:30px; padding:16px 18px; border-radius:16px; background:var(--surface); }
+a.mail { font-weight:600; }
+/* Home */
+.hero { max-width:1040px; margin:0 auto; padding:56px 20px 24px; display:grid; gap:40px; grid-template-columns:1.1fr .9fr; align-items:center; }
+.eyebrow { display:inline-block; font-size:13px; font-weight:600; letter-spacing:.8px; text-transform:uppercase; color:var(--link); margin-bottom:14px; }
+.lead { font-size:19px; color:var(--muted); max-width:30em; }
+.stores { display:flex; gap:10px; flex-wrap:wrap; margin:24px 0 8px; }
+.store { display:inline-flex; flex-direction:column; justify-content:center; min-width:170px; padding:10px 18px; border-radius:14px; background:var(--bar); color:#fff; text-decoration:none; line-height:1.25; }
+.store small { font-size:12px; color:rgba(255,255,255,.7); } .store b { font-size:17px; }
+.phone { justify-self:center; width:min(320px,76vw); height:auto; filter:drop-shadow(0 24px 40px rgba(60,40,20,.25)); }
+.section { max-width:1040px; margin:0 auto; padding:36px 20px 0; }
+.grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); }
+.card { background:var(--card); border:1px solid var(--border); border-radius:22px; padding:22px; box-shadow:var(--shadow); }
+.card p { color:var(--muted); font-size:16px; margin:0; }
+.step { display:inline-flex; width:32px; height:32px; border-radius:16px; align-items:center; justify-content:center; background:var(--accent); color:#fff; font-weight:700; font-size:15px; margin-bottom:12px; }
+.note { margin-top:14px; padding:16px 20px; border-radius:18px; background:var(--surface); color:var(--muted); font-size:16px; }
+footer { max-width:1040px; margin:56px auto 0; padding:22px 20px 40px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:8px 18px; }
+footer a { color:var(--muted); text-decoration:none; } footer a:hover { color:var(--link); }
+footer .copy { width:100%; margin-top:6px; }
+@media (max-width: 760px) { .hero { grid-template-columns:1fr; padding-top:36px; } .phone { order:2; } nav { width:100%; margin-left:0; gap:16px; } }
+</style>
+</head>
+<body>
+<header class="bar"><div class="in"><a class="brand" href="index.html"><img src="icon.png" alt="">Nooks Owl</a>
+<nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="doc"><article><h1>Child Safety Standards</h1><p class="muted">Last updated 7 November 2026</p>
+<p>Nooks Owl has zero tolerance for child sexual abuse and exploitation (CSAE), including child sexual abuse material (CSAM). These standards apply to everything on Nooks Owl: profiles, photos, topics, comments, chat messages, voice notes and voice calls.</p>
+<h2>Adults only</h2><p>Nooks Owl is only for people aged 18 and over. Everyone gives their birth year when they sign up, and we don't let anyone under 18 create an account. If we learn that an account belongs to someone under 18, we remove it.</p>
+<h2>What is never allowed</h2><p>Any content or behaviour that sexualises, exploits, abuses or endangers children, including: sharing, requesting or linking to CSAM; grooming or trying to contact a minor; sexual comments about children; and any attempt to arrange contact with a child.</p>
+<h2>How we prevent and find it</h2><p>A filter blocks sexual and abusive language in nicknames, bios, topics, comments and messages. Calls only start when both people agree, and people choose who can call them.</p><p>Every topic, chat, profile and call has a Report button, and people can block anyone. Our team is notified of every report and reviews it within 24 hours.</p>
+<h2>What we do</h2><p>When we find CSAE content or behaviour, we remove the content, permanently ban the account, keep the evidence the law requires, and report it to the National Center for Missing &amp; Exploited Children (NCMEC) and to the relevant local authorities, including law enforcement in India where applicable. We cooperate fully with law enforcement requests.</p>
+<h2>Report a concern</h2><p>In the app, tap Report on the profile, message, topic or call. You can also email our child safety contact directly. If a child is in immediate danger, contact your local police first.</p>
+<div class="contact"><b>Child safety contact</b><br>Sadheesh Dharmaraj, Nooks Owl<br><a class="mail" href="mailto:support@nooksowl.com">support@nooksowl.com</a></div>
+</article></main>
+<footer><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="child-safety.html">Child safety</a><a href="delete-account.html">Delete account</a><a href="mailto:support@nooksowl.com">support@nooksowl.com</a>
+<span class="copy">© 2026 Nooks Owl · For people aged 18 and over</span></footer>
+</body></html>
